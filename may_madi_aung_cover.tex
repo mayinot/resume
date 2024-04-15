@@ -1,0 +1,119 @@
+% Copyright (C) 2014 Lorenzo Saino <http://github.com/lorenzosaino>
+%
+% Permission is hereby granted, free of charge, to any person
+% obtaining a copy of this software and associated documentation
+% files (the "Software"), to deal in the Software without
+% restriction, including without limitation the rights to use,
+% copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software
+% is furnished to do so, subject to the following conditions:
+%
+% The above copyright notice and this permission notice shall be
+% included in all copies or substantial portions of the Software.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+% EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+% NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+% HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+% WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+% DEALINGS IN THE SOFTWARE.
+
+% Cover letter using letter.cls
+\documentclass[a4paper, 11pt]{letter}
+
+%%%%%%%%%%%%%%%%%   CONSTANTS   %%%%%%%%%%%%%%%%%
+
+% AUTHOR INFORMATION
+\newcommand{\covertitle}{May Madi Aung}                  % Title of cover letter
+\newcommand{\pdftitle}{Cover~letter~\covertitle}        % Title of PDF
+\newcommand{\pdfauthor}{\covertitle}                    % Author of PDF
+
+\newcommand{\authoraddress}{                            % Author's mailing address
+186 CANBERRA DRIVE \#09-34\\
+VISIONAIR, Singapore 767955}
+\newcommand{\authoremail}{maymadiaung99@gmail.com}          % Author's email address
+\newcommand{\authortel}{+65 8186 1415 }                % Author's phone number
+
+% STYLE ATTRIBUTES
+\newcommand{\linkcolor}{black}               % Color of links
+\newcommand{\titlefontsize}{12pt}           % Font size of cover title
+\newcommand{\marginleft}{2.5cm}             % Left margin
+\newcommand{\marginright}{2.5cm}            % Right margin
+\newcommand{\margintop}{2.5cm}              % Top margin
+\newcommand{\marginbottom}{3cm}             % Bottom margin
+
+% Letter date
+\date{\today} % Put \today to have today's date
+
+%%%%%%%%%%%%%%%%%   PACKAGE IMPORTS   %%%%%%%%%%%%%%%%%
+\usepackage[a4paper, bindingoffset=0.0cm, left=\marginleft, right=\marginright, top=\margintop, bottom=\marginbottom, footskip=.25in]{geometry}
+\usepackage[bottom]{footmisc}   % This is to push footnotes to the bottom
+\usepackage{url}
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle=\pdftitle, pdfauthor=\pdfauthor]{hyperref}
+\hypersetup{linkcolor=\linkcolor, citecolor=\linkcolor, filecolor=black, urlcolor=\linkcolor}
+\pagenumbering{gobble}  % Comment out to show page numbers (1st page number will not be shown)
+
+
+\begin{document}
+
+\signature{May Madi Aung}        % name for signature
+
+\longindentation=0pt            % needed to get closing flush left
+\let\raggedleft\raggedright     % needed to get date flush left
+
+% Reduce size of bullet character
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+%%%%%%%%%%%%%%%%%   COMMAND DEFINITIONS   %%%%%%%%%%%%%%%%%
+
+% Make the title of the cover letter
+\newcommand{\makecovertitle}{
+    \begin{center}
+    {\Large\bf \covertitle}
+    \end{center}
+    \smallskip\hrule height 1pt
+}
+
+% Create list of contact information
+\newcommand{\contact}{
+    \begin{center}
+    \authoraddress \\
+    Email: \href{mailto:\authoremail}{\texttt{\authoremail}} \\
+    Web: \url{\authorweb}\\
+    Tel: \authortel
+    \end{center}
+}
+
+%%%%%%%%%%%%%%%%%   DOCUMENT   %%%%%%%%%%%%%%%%%
+
+\begin{letter}
+{   % Recipient
+\textbf{Receipient} \\
+Address line 1 \\
+Address line 2 \\
+City \\
+Country
+}
+
+\makecovertitle
+
+\contact
+
+\opening{Dear Sir/Madam,}
+
+am writing to express my strong interest in the Software Engineer (Entry Level) position at Ascenda Loyalty. I came across the job listing on Job Hunt Hour, and I believe that my skills and passion for software engineering make me an excellent fit for this role. 
+
+Currently, I have completed pursuing a Bachelor of Engineering in Software Engineering at the Singapore Institute Of Technology (SIT). Throughout my education and my previous internship experience, I am well-versed in conducting design reviews, code reviews, and unit testing, and I understand the importance of usability testing in delivering exceptional user experiences. These practices ensure software applications' quality, reliability, and usability, and I am eager to contribute my skills in these areas to Ascenda Loyalty. 
+
+As stated in the job description, proficiency in major object-oriented programming languages is required. I have extensive experience in software development and possess strong mathematical and computer skills. I am fluent in Java, C++, C\#, and Kotlin, and I have hands-on experience in building MVC applications with ASP.NET (C\#). I am currently working as a .NET developer in GetGo, where I effectively applied object-oriented programming concepts and design patterns to develop software systems.
+
+n addition to technical skills, I possess strong communication and interpersonal abilities, as emphasized in the job description. My experience as a Junior Developer at GetGo has allowed me to develop a wide range of interpersonal and communication skills. For instance, I successfully engaged with various stakeholders and product managers to gather and clarify the requirement for a Fleet Management System, leading to a notable 50\% increase in the number of completed maintenance jobs. 
+
+Joining Asenda Loyalty as a Software Engineer (Entry level) is an opportunity I wholeheartedly embrace, and I am eager to contribute my skills and dedication to the success of the company. I have attached my resume, which provides further details on my skills, education, and experiences. Should you have any questions or require additional information, please feel free to reach me at 8186 1415. I look forward to the opportunity to discuss my qualifications in more detail. Thank you for considering my application.
+
+
+\closing{Sincerely,}
+\end{letter}
+\end{document}
