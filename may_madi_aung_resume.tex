@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large May Madi Aung}} & Email : \href{mailto:maymadiaung99@gmail.com}{maymadiaung99@gmail.com}\\
+  \href{linkedin.com/in/maymadi}{linkedin.com/in/maymadi} & Mobile : \href{tel:+6581861415}{+65 8186 1415} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore Institute of Technology}{Singapore}
+      {BEng (Hons) Information and Communications Technology (Software Eng);  GPA: 4.27}{Aug. 2020 -- Jan. 2024}
+    \resumeSubheading
+      {Singapore Polytechnic}{Singapore}
+      {Diploma In Infocomm Security Management}{Apr. 2017 -- Apr. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {GetGo Carsharing}{Singapore}
+      {Junior Developer}{Jan 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{ASP .NET}
+          {Developed the backend system for GetGo’s new architecture under a development Vehical and Operation Team.}
+        \resumeItem{Data Dog}
+          {Assisted the organisation in Distributed Tracing using Datadog. }
+          \resumeItem{Jenkins}
+          {Created CI/CD pipelines in Jenkins for GetGo 2.0.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {GetGo Carsharing}{Singapore}
+      {Junior Dev (Intern)}{Jan 2023 - Dec 2023}
+      \resumeItemListStart
+        \resumeItem{ASP.NET}
+          {Developed the backend system for a Fleet Management System using ASP.NET and employing the microservice
+          architecture, resulting in a significant 50\% reduction in the time required to respond, resolve, and reactivate vehicles.}
+        \resumeItem{Swift}
+          {Successfully implemented enhancements in the Fleet Operator Application (iOS), leading to a notable 50\% increase in
+          the number of completed maintenance jobs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accenture}{Singapore}
+      {Java Dev (Intern)}{Summer 2021 and 2022}
+      \resumeItemListStart
+        \resumeItem{System Integration Testing}
+          {Conducted SIT on Client's Project and effectively reported 60\% of identified bugs to
+          developers, ensuring prompt resolution and improved software quality.}
+        \resumeItem{Java}
+          {Utilized Java programming to implement bug fixes in the UAT (User Acceptance Testing) environment, resulting in a
+          20\% decrease in the delivery timeline and enhanced project efficiency.}
+        \resumeItem{SQL Database}
+          {Demonstrated proficiency in data mining techniques to gather accounts for testing purposes, contributing to
+          comprehensive and thorough test coverage.}
+         \resumeItem{Jenkins}
+          {Acquired familiarity with Jenkins Pipeline, enabling the continuous deployment of code and driving a remarkable 20\%
+          improvement in customer experience through faster and more efficient software releases.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DBS Bank}{Sinapore}
+      {Risk Analyst (Intern)}{Apr 2019 - Aug 2019}
+      \resumeItemListStart
+        \resumeItem{SharePoint Automation}
+          {Spearheaded the automation of the team's SharePoint site, specifically the TS Audit Portal, to streamline the auditing
+          process, resulting in a notable 30\% reduction in audit time. This optimization allowed the team to allocate more time
+          and attention to critical tasks.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Data Analytic Dashboard, NHGP}
+    {Successfully develop a Data Analytic Dashboard
+    using the R Shiny Framework, facilitating insightful data analysis and visualization.Implemented version control practices using Git, enabling seamless collaboration and code management within the
+    development team.}
+    \resumeSubItem{Hotel Concierge Web Portal}
+      {Successfully guided the team in developing a robust MVC (Model-View-Controller) application using ASP.NET (C#),
+      facilitating an effective learning experience in object-oriented design, software design patterns and best practices.}
+    \resumeSubItem{Pentesting Tool, DSO}
+      {Engineered and implemented automation solutions for Web Penetration Testing and Client-Side Penetration Testing,
+      utilizing C and Java programming languages.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+ \section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Java, Python, C/C++, C#, Kotlin, Swift, R, JavaScript, HTML/CSS, SQL } \\
+      \textbf{Technologies}{: AWS, Solace, Hadoop, Datadog }\\
+      \textbf{Frameworks}{: ASP.NET, Node.js, Next.js, React, Flask, JUnit, Tailwind } \\
+      \textbf{Developer Tools}{: Git, Docker, AWS Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Jenkins } 
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
